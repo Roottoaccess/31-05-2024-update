@@ -32,6 +32,9 @@ public class insertion_sort extends Thread{
     public static void Engine(int arr[], int lmt){
         /* Engine Dinamics And Algorithm */
 
+        System.out.println();
+        System.out.println("AFTER SORTING....");
+
         int i ; int j; int key;
         for(i = 1; i < lmt; i++)
         {
@@ -44,18 +47,18 @@ public class insertion_sort extends Thread{
                 j--;
             }
             arr[j + 1] = key;
-        }
-
-        System.out.println();
-        System.out.println("AFTER SORTING....");
 
         try{
             for(int z: arr){
                 System.out.print(z+" ");
                 Thread.sleep(500);
             }
+            System.out.println();
         }catch(Exception e){
             System.out.println(e);
         }
+        }
+
+        
     }
 }
